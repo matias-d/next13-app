@@ -15,7 +15,7 @@ export default async function Comments ({ params }) {
       <h2 className='text-lg font-semibold text-center'>Comments of <span className='text-blue-500'>Post</span></h2>
       {
         comments.map((comment) => (
-          <div key={comment.id} className='bg-zinc-700 p-4 rounded-xl flex flex-col gap-3'>
+          <div key={comment.id} className='bg-zinc-700 p-2 rounded-xl flex flex-col gap-3'>
             <div className='flex justify-between'>
               <div className='flex gap-2 items-center'>
                 <Image alt={comment.email} src={`https://avatars.dicebear.com/api/big-smile/${comment.email}.svg`} width='30' height='30' />
